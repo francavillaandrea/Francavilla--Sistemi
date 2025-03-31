@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Clock della CPU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="clock-page">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="cpu.html" >Le CPU</a></li>
+                <li><a href="componenti.html">Componenti CPU</a></li>
+                <li><a href="vonneumann.html" >Il modello di Von Neumann</a></li>
+                <li><a href="clock.html"  class="active" >Clock</a></li>
+            </ul>
+        </nav>
+
+        <h1>Il Clock della CPU</h1>
+
+        <h2>Cos'è il Clock della CPU?</h2>
+        <p>Il clock della CPU è un segnale elettrico che coordina e sincronizza le operazioni all'interno del processore. Funziona come un metronomo, dettando il ritmo delle operazioni della CPU.</p>
+
+        <h2>Come funziona?</h2>
+        <p>Il clock genera impulsi elettrici a intervalli regolari. Ogni impulso è chiamato "ciclo di clock". La frequenza di questi impulsi è misurata in Hertz (Hz).</p>
+
+        <div class="clock-animation" id="clockAnimation">
+            &#9201; <span id="clockTick">Tick</span>
+        </div>
+
+        <h2>Importanza del Clock</h2>
+        <ul>
+            <li>Sincronizzazione: Assicura che tutte le componenti della CPU lavorino in armonia.</li>
+            <li>Velocità: La frequenza del clock influenza direttamente la velocità di elaborazione della CPU.</li>
+            <li>Prestazioni: Un clock più veloce generalmente significa prestazioni migliori, ma anche maggior consumo energetico.</li>
+        </ul>
+
+        <h2>Frequenze comuni</h2>
+        <p>Le CPU moderne possono avere frequenze di clock che vanno da 1 GHz a oltre 5 GHz. 1 GHz equivale a 1 miliardo di cicli al secondo!</p>
+    </div>
+
+    <script>
+        function animateClock() {
+            const clockTick = document.getElementById('clockTick');
+            setInterval(() => {
+                clockTick.textContent = clockTick.textContent === 'Tick' ? 'Tock' : 'Tick';
+            }, 500);
+        }
+        animateClock();
+    </script>
+    <footer>
+        <p>&copy; 2024 Andrea Francavilla. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+<script src="animations.js"></script>
+</html>

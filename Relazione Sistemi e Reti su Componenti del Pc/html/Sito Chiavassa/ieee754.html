@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formato IEEE754</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formato IEEE754</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="numerazione.html" target="_blank">Sistemi di Numerazione</a></li>
+                <li><a href="conversioni.html" target="_blank">Conversioni</a></li>
+                <li><a href="esercizi.html" target="_blank">Esercizi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Standard IEEE754</h2>
+        <p>
+            Lo standard IEEE754 è utilizzato per rappresentare i numeri in virgola mobile
+            nelle applicazioni informatiche. Organizzazione dei 32 bit:
+        </p>
+        <ul>
+            <li>1 bit per il segno</li>
+            <li>8 bit per l'esponente con un bias di 127</li>
+            <li>23 bit per la mantissa</li>
+        </ul>
+
+        <h2>Esempio di Conversione IEEE754</h2>
+        <p>Ecco un esempio di conversione del numero 160,75 in formato IEEE754 a 32 bit:</p>
+        <ul>
+            <li>1. Parte intera: 160 in binario è 10100000</li>
+            <li>2. Parte decimale: 0,75 in binario è 0,11</li>
+            <li>3. Mantissa: 01000001100000000000000</li>
+            <li>4. Esponente (biasato 127): 10000110</li>
+        </ul>
+        <p>Risultato finale in IEEE754: <strong>0 10000110 01000001100000000000000</strong></p>
+    </section>
+
+    <footer>
+        <p>© 2024 Sistemi di Numerazione e IEEE754 - Progetto didattico</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architettura di von Neumann</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="cpu.html" >Le CPU</a></li>
+                <li><a href="componenti.html">Componenti CPU</a></li>
+                <li><a href="vonneumann.html" class="active"  >Il modello di Von Neumann</a></li>
+                <li><a href="clock.html" >Clock</a></li>
+            </ul>
+        </nav>
+        <h1>L'Architettura di von Neumann</h1>
+        
+        <h2>Introduzione</h2>
+        <p>L'architettura di von Neumann, proposta dal matematico John von Neumann nel 1945, è il modello di riferimento per la maggior parte dei computer moderni. Questa architettura definisce la struttura base di un elaboratore elettronico, introducendo il concetto rivoluzionario di "programma memorizzato".</p>
+
+        <h2>Contesto Storico</h2>
+        <p>John von Neumann sviluppò questa architettura mentre lavorava al progetto EDVAC presso l'Università della Pennsylvania. Il suo lavoro si basava sui progressi precedenti, come l'ENIAC, ma introdusse innovazioni fondamentali che ancora oggi influenzano il design dei computer.</p>
+
+        <h2>Componenti Principali</h2>
+        <p> Egli definì che un computer dovesse avere 3 componenti fondamentali per il suo funzionamento: la CPU, la memoria Centrale e l'unita di input e output.</p>
+        <ul>
+            <li><strong>Unità di Elaborazione (CPU)</strong>:
+                <ul>
+                    <li>Unità Aritmetico-Logica (ALU): Esegue operazioni matematiche e logiche</li>
+                    <li>Unità di Controllo (CU): Coordina e controlla le operazioni del computer</li>
+                    <li>Registri: Memoria ad accesso rapido per dati temporanei</li>
+                </ul>
+            </li>
+            <li><strong>Memoria Centrale</strong>:
+                <ul>
+                    <li>Dati: Informazioni su cui il computer opera</li>
+                    <li>Programmi: Sequenze di istruzioni eseguibili</li>
+                    <li>Risultati intermedi: Dati temporanei durante l'elaborazione</li>
+                </ul>
+            </li>
+           <li><strong>Unità di Input/Output</strong> Gestisce la comunicazione con dispositivi esterni</li>
+        </ul>
+
+        <h2>Caratteristiche Principali</h2>
+        <ol>
+            <li><strong>Programma memorizzato</strong>: Dati e istruzioni sono memorizzati nella stessa memoria, permettendo al computer di modificare il proprio programma</li>
+            <li><strong>Elaborazione sequenziale</strong>: Le istruzioni vengono eseguite una dopo l'altra, in ordine</li>
+            <li><strong>Architettura general purpose</strong>: Può eseguire diversi tipi di programmi senza modifiche hardware</li>
+        </ol>
+
+        <div class="image-container">
+            <img src="./images/von-neumann-architecture.png" alt="Architettura di Von Neumann" class="page-image">
+            <p class="image-caption">Schema dell'architettura di Von Neumann</p>
+        </div>
+
+        <h2>Ciclo di Esecuzione</h2>
+        <p>Il ciclo base di esecuzione, noto come ciclo fetch-decode-execute, comprende:</p>
+        <ol>
+            <li><strong>Fetch</strong>: Prelievo dell'istruzione dalla memoria</li>
+            <li><strong>Decode</strong>: Decodifica dell'istruzione per determinare l'operazione da eseguire</li>
+            <li><strong>Execute</strong>: Esecuzione dell'istruzione, che può includere operazioni aritmetiche, logiche, di trasferimento dati o di controllo del flusso</li>
+        </ol>
+
+        <div class="image-container">
+            <img src="./images/fetch-execute-cycle.png" alt="Ciclo Fetch-Execute" class="page-image" width="400">
+            <p class="image-caption">Il ciclo Fetch-Execute in dettaglio</p>
+        </div>
+
+        <h2>Vantaggi</h2>
+        <ul>
+            <li>Semplicità concettuale: Facilita la progettazione e la comprensione</li>
+            <li>Flessibilità: Può eseguire una vasta gamma di programmi</li>
+            <li>Universalità: Adattabile a diverse applicazioni</li>
+        </ul>
+
+        <h2>Evoluzione Moderna</h2>
+        <p>L'architettura di base è rimasta sostanzialmente invariata, ma sono state introdotte numerose ottimizzazioni:</p>
+        <ul>
+            <li>Cache multi-livello: Riduce il tempo di accesso alla memoria</li>
+            <li>Pipeline: Permette l'esecuzione parzialmente sovrapposta delle istruzioni</li>
+            <li>Esecuzione fuori ordine: Ottimizza l'uso delle risorse della CPU</li>
+        </ul>
+
+        <h2>Conclusione</h2>
+        <p>Nonostante le sue limitazioni, l'architettura di von Neumann rimane il più grande esempio da seguire nell'informatica moderna. La sua flessibilità e universalità hanno permesso lo sviluppo di computer sempre più potenti e versatili, adattandosi alle esigenze in continua evoluzione dell'era digitale.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Andrea Francavilla. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+<script src="animations.js"></script>
+</html>

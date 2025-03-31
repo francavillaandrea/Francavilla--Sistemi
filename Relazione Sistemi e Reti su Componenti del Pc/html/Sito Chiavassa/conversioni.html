@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversioni</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Conversioni tra Sistemi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="numerazione.html" target="_blank">Sistemi di Numerazione</a></li>
+                <li><a href="ieee754.html" target="_blank">Formato IEEE754</a></li>
+                <li><a href="esercizi.html" target="_blank">Esercizi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Conversioni comuni</h2>
+
+        <h3>1. Binario a Decimale</h3>
+        <p>
+            Per convertire il numero binario <strong>101101</strong> in decimale:
+        </p>
+        <p>
+            \( 1 \times 2^5 + 0 \times 2^4 + 1 \times 2^3 + 1 \times 2^2 + 0 \times 2^1 + 1 \times 2^0 = 32 + 0 + 8 + 4 + 0 + 1 = 45 \)
+        </p>
+
+        <h3>2. Decimale a Binario</h3>
+        <p>
+            Per convertire il numero decimale <strong>45</strong> in binario:
+        </p>
+        <p>
+            <math>
+                45 \div 2 = 22 \quad (\text{quoziente}) \quad \text{con resto} \quad 1 <br>
+                22 \div 2 = 11 \quad (\text{quoziente}) \quad \text{con resto} \quad 0 <br>
+                11 \div 2 = 5 \quad (\text{quoziente}) \quad \text{con resto} \quad 1 <br>
+                5 \div 2 = 2 \quad (\text{quoziente}) \quad \text{con resto} \quad 1 <br>
+                2 \div 2 = 1 \quad (\text{quoziente}) \quad \text{con resto} \quad 0 <br>
+                1 \div 2 = 0 \quad (\text{quoziente}) \quad \text{con resto} \quad 1 <br>
+                <br>
+                \text{Leggendo i resti dal basso verso l'alto otteniamo:} <strong>101101</strong>.
+            </math>
+        </p>
+
+        <h3>3. Decimale a Esadecimale</h3>
+        <p>
+            Per convertire il numero decimale <strong>255</strong> in esadecimale:
+        </p>
+        <p>
+            \( 255 \div 16 = 15 \) (quoziente) e 15 (resto, rappresentato da F), quindi il risultato è <strong>FF</strong>.
+        </p>
+
+        <h3>4. Esadecimale a Binario</h3>
+        <p>
+            Per convertire <strong>3A5F</strong> in binario:
+        </p>
+        <p>
+            3 → 0011, A → 1010, 5 → 0101, F → 1111, quindi <strong>0011101001011111</strong>.
+        </p>
+
+        <h3>5. Decimale a Ottale</h3>
+        <p>
+            Per convertire il numero decimale <strong>65</strong> in ottale:
+        </p>
+        <p>
+            \( 65 \div 8 = 8 \) (quoziente), \( 1 \) (resto), quindi il risultato è <strong>101</strong> in ottale.
+        </p>
+
+        <h3>6. Ottale a Binario</h3>
+        <p>
+            Per convertire <strong>27</strong> in binario:
+        </p>
+        <p>
+            2 → 010, 7 → 111, quindi <strong>010111</strong>.
+        </p>
+
+        <h3>7. Ottale a Esadecimale</h3>
+        <p>
+            Convertiamo <strong>25</strong> in esadecimale:
+        </p>
+        <p>
+            \( 25 \div 8 = 3 \) (quoziente), \( 1 \) (resto), quindi il risultato è <strong>19</strong> in esadecimale.
+        </p>
+
+        <h3>8. Binario a Ottale</h3>
+        <p>
+            Per convertire il numero binario <strong>101101</strong> in ottale:
+        </p>
+        <p>
+            Raggruppiamo i bit da destra a sinistra in gruppi di tre: <strong>010 110 1</strong> (aggiungiamo zeri a sinistra per il primo gruppo: <strong>010 110 001</strong>).
+            <br>
+            Ogni gruppo viene convertito in ottale:
+            <br>
+            010 → 2, 110 → 6, 001 → 1, quindi il risultato finale è <strong>261</strong> in ottale.
+        </p>
+    </section>
+
+    <section>
+        <h2>Conversione IEEE754</h2>
+        <p>
+            Esempio: Convertire 160,75 in formato IEEE754 a 32 bit.
+            <button onclick="mostraConversione()">Mostra la conversione</button>
+        </p>
+        <div id="conversione"></div>
+    </section>
+
+    <footer>
+        <p>© 2024 Sistemi di Numerazione e IEEE754 - Progetto didattico</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

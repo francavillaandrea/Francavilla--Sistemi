@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componenti di una CPU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="cpu.html" >Le CPU</a></li>
+                <li><a href="componenti.html" class="active" >Componenti CPU</a></li>
+                <li><a href="vonneumann.html" >Il modello di Von Neumann</a></li>
+                <li><a href="clock.html" >Clock</a></li>
+            </ul>
+        </nav>
+        <h1>Componenti di una CPU (Central Processing Unit)</h1>
+
+        <section id="introduzione">
+            <h2>Introduzione</h2>
+            <p>La CPU (Central Processing Unit) è il "cervello" di un computer, responsabile dell'esecuzione di istruzioni e dell'elaborazione dei dati. È composta da diversi componenti chiave che lavorano insieme per eseguire operazioni complesse.</p>
+        </section>
+
+        <section id="componenti-principali">
+            <h2>Componenti Principali</h2>
+            
+            <div class="image-container">
+                <img src="./images/cpu-components.png" alt="Componenti della CPU" class="page-image">
+                <p class="image-caption">Vista d'insieme dei componenti principali di una CPU</p>
+            </div>
+
+            <article id="alu">
+                <h3>1. Unità Aritmetico-Logica (ALU)</h3>
+                <p>L'ALU è responsabile per l'esecuzione di operazioni aritmetiche e logiche:</p>
+                <ul>
+                    <li>Operazioni aritmetiche: addizione, sottrazione, moltiplicazione, divisione</li>
+                    <li>Operazioni logiche: AND, OR, NOT, XOR</li>
+                    <li>Operazioni di confronto: maggiore di, minore di, uguale a</li>
+                </ul>
+                <p>L'ALU lavora con dati binari e può eseguire operazioni su numeri interi e in virgola mobile.</p>
+            </article>
+
+            <div class="image-container">
+                <img src="./images/alu-diagram.png" alt="Schema ALU" class="page-image">
+                <p class="image-caption">Schema funzionale dell'Unità Aritmetico-Logica</p>
+            </div>
+
+            <article id="cu">
+                <h3>2. Unità di Controllo (CU)</h3>
+                <p>La CU coordina e controlla le operazioni all'interno della CPU:</p>
+                <ul>
+                    <li>Decodifica le istruzioni dal programma</li>
+                    <li>Invia segnali di controllo agli altri componenti della CPU</li>
+                    <li>Gestisce il flusso di dati tra la CPU e la memoria</li>
+                    <li>Controlla la sequenza di esecuzione delle istruzioni</li>
+                </ul>
+            </article>
+
+            <article id="registri">
+                <h3>3. Registri</h3>
+                <p>I registri sono piccole unità di memoria ad alta velocità all'interno della CPU:</p>
+                <ul>
+                    <li>Accumulatore: Memorizza risultati temporanei delle operazioni</li>
+                    <li>Program Counter (PC): Contiene l'indirizzo della prossima istruzione da eseguire</li>
+                    <li>Registri di uso generale: Per memorizzare dati temporanei durante l'elaborazione</li>
+                </ul>
+            </article>
+
+            <article id="cache">
+                <h3>4. Cache</h3>
+                <p>La cache è una memoria ad alta velocità che riduce il tempo di accesso ai dati frequentemente utilizzati:</p>
+                <ul>
+                    <li>Cache L1: Più vicina al core della CPU, più veloce ma di dimensioni limitate</li>
+                    <li>Cache L2: Più grande della L1, ma leggermente più lenta</li>
+                    <li>Cache L3: Presente in molte CPU moderne, condivisa tra più core</li>
+                </ul>
+                <p>La cache utilizza algoritmi sofisticati per prevedere quali dati saranno necessari e prelevarli in anticipo dalla memoria principale.</p>
+            </article>
+            
+            <div class="image-container">
+                <img src="./images/cache-hierarchy.png" alt="Gerarchia della Cache" class="page-image">
+                <p class="image-caption">Gerarchia della memoria cache in una CPU moderna</p>
+            </div>
+
+        </section>
+
+        <section id="bus-interni">
+            <h2>Bus Interni</h2>
+            <p>I bus interni della CPU facilitano la comunicazione tra i vari componenti:</p>
+            <ul>
+                <li>Bus dati: Trasporta i dati tra i componenti della CPU</li>
+                <li>Bus indirizzi: Trasporta gli indirizzi di memoria</li>
+                <li>Bus di controllo: Trasporta i segnali di controllo</li>
+            </ul>
+        </section>
+
+        <section id="conclusione">
+            <h2>Conclusione</h2>
+            <p>La CPU è un componente complesso e sofisticato, in continua evoluzione. La comprensione dei suoi componenti e del loro funzionamento è fondamentale per apprezzare le prestazioni e le capacità dei moderni sistemi di elaborazione.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Andrea Francavilla. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+<script src="animations.js"></script>
+</html>

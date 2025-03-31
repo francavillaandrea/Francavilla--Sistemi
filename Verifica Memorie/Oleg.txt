@@ -1,0 +1,170 @@
+Domande Verifica Chiavax:
+
+1)  Cosa succede se lo stack di un programma si riempie completamente ?  
+   - Viene automaticamente aumentata la dimensione dello stack  
+   - Il programma procede ad usare la memoria heap  
+   - Lo stack si resetta automaticamente  
+   - Il programma si blocca temporaneamente  
+   - ✅ Si verifica un errore di overflow dello stack  
+
+2)  Qual è il principale vantaggio dell'uso della memoria stack ?  
+   - ✅ Maggiore velocità nell'allocazione e deallocazione  
+   - Allocazione dinamica flessibile  
+   - Indipendenza dalla struttura del programma  
+   - Maggiore spazio di allocazione  
+   - Possibilità di gestire grandi quantità di dati  
+
+3)  Qual è il principio di località nella memoria cache ?  
+   - La cache memorizza solo istruzioni non dati  
+   - Tutti i dati devono essere memorizzati in sequenza  
+   - ✅ I dati usati di recente saranno probabilmente riutilizzati  
+   - Dati casuali vengono memorizzati per aumentare la probabilità di successo  
+   - Dati vicini a quelli usati di recente saranno probabilmente usati presto  
+
+4)  Qual è la principale differenza tra SRAM e DRAM ?  
+   - La SRAM è utilizzata solo per archiviazione a lungo termine  
+   - SRAM è volatile, DRAM non lo è  
+   - SRAM è più limitata di DRAM  
+   - DRAM ha un costo maggiore rispetto a SRAM  
+   - ✅ SRAM usa transistor, DRAM usa condensatori  
+
+5)  In una cache completamente associativa, come vengono mappati i blocchi di memoria ?  
+   - I blocchi vengono mappati casualmente  
+   - ✅ Ogni blocco può essere mappato in qualsiasi posizione della cache  
+   - Ogni blocco è assegnato a un indice specifico  
+   - Ogni blocco è mappato a una posizione specifica nella RAM  
+   - Solo i blocchi consecutivi possono essere mappati  
+
+6)  Qual è la principale differenza tra SDRAM e DDR SDRAM ?  
+   - ✅ DDR SDRAM trasferisce dati su entrambi i fronti del segnale di clock  
+   - DDR SDRAM è utilizzata esclusivamente nei dispositivi mobili  
+   - SDRAM ha una larghezza di banda maggiore rispetto a DDR SDRAM  
+   - SDRAM supporta solo tensioni basse  
+   - DDR SDRAM trasferisce dati su un solo fronte di clock  
+   - Tutte le risposte sono corrette  
+
+7)  Quale tipo di memoria è più adatta per le cache di un processore ?  
+   - DDRS  
+   - ✅ SRAM  
+   - DRAM  
+   - RDRAM  
+   - SDRAM  
+   - DRS  
+
+8)  Cosa caratterizza una cache esclusivamente associativa ?  
+   - Ogni blocco di memoria può essere memorizzato in una sola posizione  
+   - ✅ Ogni blocco di memoria può essere memorizzato in qualsiasi posizione della cache  
+   - Non è compatibile con i processori moderni  
+   - Ogni blocco di memoria ha più copie nella cache  
+   - La cache utilizza solo il metodo "write-back"  
+
+9)  Qual è il contenuto dello stack dopo la sequenza: Push(5), Push(10), Pop(), Push(20) ?  
+   - (10,20)  
+   - ✅ (5,20)  
+   - (5,10,20)  
+   - (5,10)  
+   - (20,5)  
+
+10)  In una cache associativa a k-vie, cosa significa k ?  
+   - La dimensione di ciascun blocco in byte  
+   - La quantità di memoria accessibile  
+   - Il numero di processori che utilizzano la cache  
+   - ✅ Il numero di vie in cui è suddivisa la cache  
+   - Il numero di bit nel tag  
+
+11)  Differenze tra le diverse tipologie di cache :  
+   -  Mappatura  diretta: ogni blocco è assegnato a una posizione specifica, veloce ma con più conflitti.  
+   -  Completamente  associativa: un blocco può essere mappato ovunque, riduce i conflitti ma è più costoso.  
+   -  Cache associativa a k- vie: divide la cache in gruppi (vie), combinando i vantaggi delle due precedenti.  
+
+12)  Quale dei seguenti circuiti implementa una cella DRAM ?  
+   - Opzione 1  
+   - Opzione 2  
+   - Opzione 3  
+   - Opzione 4  
+
+13)  Quale algoritmo è comunemente utilizzato per la sostituzione dei dati nella cache ?  
+   - LIFO (Last In First Out)  
+   - FIFO (First In First Out)  
+   - ✅ LRU (Least Recently Used)  
+   - MRU (Most Recently Used)  
+   - LFU (Least Frequently Used)  
+
+14)  Quale delle seguenti memorie è la più efficiente dal punto di vista energetico ?  
+   - DDR3  
+   - ✅ DDR5  
+   - DDR2  
+   - DDR4  
+   - DDR  
+
+15)  Qual è la relazione tra latenza e dimensione della cache ?  
+   - La latenza aumenta solo con la cache 1:1  
+   - Aumentando la dimensione diminuisce la latenza  
+   - La latenza diminuisce solo con la cache 1:3  
+   - ✅ Aumentando la dimensione aumenta la latenza  
+   - La latenza è indipendente dalla dimensione della cache  
+
+16)  Cosa significa SRAM nel concetto delle memorie ?  
+   - Memoria statica ad accesso casuale, più veloce della DRAM, usata nelle cache dei processori.  
+
+17)  In che modo l'operazione di pop influisce sulla memoria dello stack ?  
+   - L'elemento rimosso viene cancellato fisicamente dalla memoria  
+   - ✅ Lo stack si riduce liberando la memoria  
+   - L'elemento rimosso viene copiato nell'heap  
+   - L'elemento rimosso è semplicemente sovrascritto quando necessario  
+   - L'elemento viene ignorato ma non effettivamente eliminato  
+
+18)  Qual è il principio di funzionamento della memoria stack ?  
+   - MRU (Most Recently Used)  
+   - ✅ LIFO (Last In First Out)  
+   - FIFO (First In First Out)  
+   - FILO (First In Last Out)  
+   - LRU (Least Recently Used)  
+
+19) (La foto era sfocata porca mihai)
+
+20)  Quale delle seguenti affermazioni in merito alla SRAM è vera ?  
+   - Richiede di essere aggiornata periodicamente, altrimenti l'informazione è perduta  
+   - ✅ È un tipo di RAM che immagazzina ogni bit in un Flip-Flop  
+   - ✅ È la tipica cella di memoria con cui vengono realizzate le memorie cache L1  
+   - ✅ È un tipo di memoria RAM volatile  
+   - È la tipica memoria che presenta notevole latenza  
+
+21) (La foto era sfocata porca mihai)
+
+22) (La foto era sfocata porca mihai)
+
+23)  Qual è il principale vantaggio della memoria cache ?  
+   - Capacità ridotta rispetto alla RAM  
+   - Richiede aggiornamenti costanti  
+   - Non è volatile  
+   - Alta latenza  
+   - ✅ Nessuna delle precedenti, il vantaggio è ridurre i tempi di accesso ai dati rispetto alla RAM  
+
+24) (La foto era sfocata porca mihai)
+
+25)  Quante linee di trasferimento dati supporta DDR SRAM per ciclo di clock ?  
+   - 1  
+   - 11  
+   - ✅ 2  
+   - 16  
+   - 4  
+
+26) Quale dei seguenti circuiti descrive la struttura di una memoria cache?
+    
+    - Opzione 1
+    - Opzione 2
+    - Opzione 3
+    - Opzione 4
+
+27)  Quale delle seguenti informazioni descrive al meglio la DRAM ?  
+   - ✅ Richiede un aggiornamento periodico dei dati  
+   - È non volatile  
+   - Usa circuiti Flip-Flop  
+   - È più costosa della SRAM  
+   - Non richiede alimentazione costante  
+   - Tutte le risposte sono corrette  
+
+28) (La foto era sfocata porca mihai)
+
+29) (La foto era sfocata porca mihai)

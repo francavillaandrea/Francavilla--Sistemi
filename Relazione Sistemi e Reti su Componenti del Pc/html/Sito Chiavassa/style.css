@@ -1,0 +1,67 @@
+/* Stile di base per tutte le pagine */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #1f3c88;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #c0d6f9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #e0efff;
+    border-radius: 8px;
+    color: #333;
+    flex: 1; /* Forza la sezione a occupare lo spazio disponibile */
+}
+
+h1, h2 {
+    color: #1f3c88;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1f3c88;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    flex-shrink: 0; /* Mantiene il footer alla fine della pagina */
+}
