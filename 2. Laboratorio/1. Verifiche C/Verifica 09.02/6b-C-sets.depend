@@ -1,0 +1,60 @@
+# depslib dependency file v1.0
+1770635119 source:c:\users\a.francavilla.3537\desktop\verifica 09.02\tests\testing\test_alloc.c
+	"test_alloc.h"
+
+1770635119 c:\users\a.francavilla.3537\desktop\verifica 09.02\tests\testing\test_alloc.h
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1770635119 source:c:\users\a.francavilla.3537\desktop\verifica 09.02\tests\testing\test_assert.c
+	"test_assert.h"
+
+1770635119 c:\users\a.francavilla.3537\desktop\verifica 09.02\tests\testing\test_assert.h
+	<stdio.h>
+	<stdlib.h>
+	"test_groups.h"
+
+1770635119 c:\users\a.francavilla.3537\desktop\verifica 09.02\tests\testing\test_groups.h
+	<stdbool.h>
+	<stdio.h>
+
+1770635119 source:c:\users\a.francavilla.3537\desktop\verifica 09.02\tests\testing\test_groups.c
+	"test_groups.h"
+
+1770635119 source:c:\users\a.francavilla.3537\desktop\verifica 09.02\tests\testing\test_output.c
+	"test_output.h"
+
+1770635119 c:\users\a.francavilla.3537\desktop\verifica 09.02\tests\testing\test_output.h
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+
+1770635119 source:c:\users\a.francavilla.3537\desktop\verifica 09.02\tests\main.c
+	<stdbool.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	"testing/test.h"
+	"../node.h"
+	"../set.h"
+
+1770635119 c:\users\a.francavilla.3537\desktop\verifica 09.02\tests\testing\test.h
+	"test_alloc.h"
+	"test_assert.h"
+	"test_groups.h"
+	"test_output.h"
+	"test_mocks.h"
+
+1770635119 c:\users\a.francavilla.3537\desktop\verifica 09.02\tests\testing\test_mocks.h
+
+1770637360 c:\users\a.francavilla.3537\desktop\verifica 09.02\node.h
+	<stdio.h>
+	<stdlib.h>
+
+1770638934 c:\users\a.francavilla.3537\desktop\verifica 09.02\set.h
+	<stdbool.h>
+	<stdio.h>
+	"node.h"
+

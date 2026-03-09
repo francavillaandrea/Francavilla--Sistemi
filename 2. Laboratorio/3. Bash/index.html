@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandi Bash - Lezione 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        pre {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-weight: bold;
+            color: #d9534f;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sistemi e Reti - Bash - Lezione 1</h1>
+        <p>In questa esercitazione impareremo a usare i comandi bash visti finora:</p>
+        <ul>
+            <li><a href="#man">Man</a></li>
+            <li><a href="#echo">Echo</a></li>
+            <li><a href="#pwd">Pwd</a></li>
+            <li><a href="#ls">Ls</a></li>
+            <li><a href="#cd">Cd</a></li>
+            <li><a href="#cp">Cp</a></li>
+            <li><a href="#mv">Mv</a></li>
+            <li><a href="#mkdir">Mkdir</a></li>
+            <li><a href="#rmdir">Rmdir</a></li>
+            <li><a href="#rm">Rm</a></li>
+            <li><a href="#sudo">Sudo</a></li>
+            <li><a href="#touch">Touch</a></li>
+            <li><a href="#chmod">Chmod</a></li>
+            <li><a href="#cat">Cat</a></li>
+            <li><a href="#chown">Chown</a></li>
+            <li><a href="#ps">Ps</a></li>
+            <li><a href="#grep">Grep</a></li>
+            <li><a href="#io-redirection">I/O Redirection</a></li>
+            <li><a href="#script-bash">Script Bash</a></li>
+            <li><a href="#variabili">Variabili</a></li>
+            <li><a href="#operatori-logici">Operatori Logici</a></li>
+            <li><a href="#operatori-matematici">Operatori Matematici</a></li>
+            <li><a href="#cicli">Cicli</a></li>
+            <li><a href="#funzioni">Funzioni</a></li>
+            <li><a href="#permessi">Permessi</a></li>
+        </ul>
+
+        <h2 id="man">1. Il comando <code>man</code></h2>
+        <p>Il comando <code>man</code> viene usato per ottenere informazioni dal manuale per un determinato altro comando.</p>
+        <pre><code>man [altro-comando]</code></pre>
+
+        <h2 id="echo">2. Il comando <code>echo</code></h2>
+        <p>Il comando <code>echo</code> viene usato per mostrare a video una determinata stringa.</p>
+        <pre><code>echo "guarda che roba!"</code></pre>
+
+        <h2 id="pwd">3. Il comando <code>pwd</code></h2>
+        <p>Il comando <code>pwd</code> ("print-working-directory") viene usato per mostrare la cartella di lavoro.</p>
+        <pre><code>pwd</code></pre>
+
+        <h2 id="cd">4. Il comando <code>cd</code></h2>
+        <p>Il comando <code>cd</code> ("change-directory") viene usato per cambiare la cartella di lavoro.</p>
+        <pre><code>cd &lt;directory&gt;</code></pre>
+
+        <h2 id="ls">5. Il comando <code>ls</code></h2>
+        <p>Il comando <code>ls</code> viene usato per ottenere la lista dei file in una determinata directory.</p>
+        <pre><code>ls /home/saniales/mia-cartella</code></pre>
+
+        <h2 id="cp">6. Il comando <code>cp</code></h2>
+        <p>Il comando <code>cp</code> viene usato per copiare un file da una posizione sorgente a una destinazione.</p>
+        <pre><code>cp file.txt /home/saniales/file.txt</code></pre>
+
+        <h2 id="mv">7. Il comando <code>mv</code></h2>
+        <p>Il comando <code>mv</code> viene usato per spostare o rinominare un file.</p>
+        <pre><code>mv &lt;sorgente&gt; &lt;destinazione&gt;</code></pre>
+
+        <h2 id="mkdir">8. Il comando <code>mkdir</code></h2>
+        <p>Il comando <code>mkdir</code> viene usato per creare directory.</p>
+        <pre><code>mkdir &lt;destinazione&gt;</code></pre>
+
+        <h2 id="rmdir">9. Il comando <code>rmdir</code></h2>
+        <p>Il comando <code>rmdir</code> viene usato per rimuovere directory vuote.</p>
+        <pre><code>rmdir &lt;destinazione&gt;</code></pre>
+
+        <h2 id="rm">10. Il comando <code>rm</code></h2>
+        <p>Il comando <code>rm</code> viene usato per rimuovere un file.</p>
+        <pre><code>rm file.txt</code></pre>
+
+        <h2 id="sudo">11. Il comando <code>sudo</code></h2>
+        <p>Il comando <code>sudo</code> permette di eseguire operazioni come utente root.</p>
+        <pre><code>sudo &lt;comando&gt;</code></pre>
+
+        <h2 id="touch">12. Il comando <code>touch</code></h2>
+        <p>Il comando <code>touch</code> viene usato per creare un file vuoto.</p>
+        <pre><code>touch "esempio.txt"</code></pre>
+
+        <h2 id="chmod">13. Il comando <code>chmod</code></h2>
+        <p>Il comando <code>chmod</code> permette di modificare i permessi di un file o di una directory.</p>
+        <pre><code>chmod 400 file-prova.txt</code></pre>
+
+        <h2 id="cat">14. Il comando <code>cat</code></h2>
+        <p>Il comando <code>cat</code> viene usato per leggere il contenuto di un file.</p>
+        <pre><code>cat file.txt</code></pre>
+
+        <h2 id="chown">15. Il comando <code>chown</code></h2>
+        <p>Il comando <code>chown</code> permette di cambiare il proprietario di un file.</p>
+        <pre><code>chown file.txt utente</code></pre>
+
+        <h2 id="ps">16. Il comando <code>ps</code></h2>
+        <p>Il comando <code>ps</code> mostra i processi attivi nel sistema.</p>
+        <pre><code>ps aux</code></pre>
+
+        <h2 id="grep">17. Il comando <code>grep</code></h2>
+        <p>Il comando <code>grep</code> permette di cercare una stringa all'interno di un'altra.</p>
+        <pre><code>echo "Bella Ciaone" | grep "Ciaone"</code></pre>
+
+        <h2 id="io-redirection">I/O Redirection</h2>
+        <p>La redirezione di input/output permette di indirizzare l'output di un comando in un file o passarlo come input per un altro comando. Ecco alcuni esempi di come funziona la redirezione:</p>
+
+        <h3>1. Redirezione dell'output in un file</h3>
+        <pre><code>echo "Ciao Mondo" > output.txt</code></pre>
+        <p>Questo comando scrive "Ciao Mondo" nel file <code>output.txt</code>. Se il file esiste già, il suo contenuto verrà sovrascritto.</p>
+
+        <h3>2. Appendere l'output a un file</h3>
+        <pre><code>echo "Buongiorno" >> output.txt</code></pre>
+        <p>Questo comando aggiunge "Buongiorno" alla fine del file <code>output.txt</code>, senza sovrascrivere il contenuto esistente.</p>
+
+        <h3>3. Redirezione dell'input da un file</h3>
+        <pre><code>sort < input.txt</code></pre>
+        <p>Questo comando legge il contenuto di <code>input.txt</code> e lo ordina.</p>
+
+        <h3>4. Pipeline</h3>
+        <pre><code>ps aux | grep "bash"</code></pre>
+        <p>Questo comando mostra tutti i processi e filtra solo quelli che contengono "bash".</p>
+
+        <h2 id="script-bash">18. Script Bash</h2>
+        <p>Un file di script Bash è un file di testo contenente una sequenza di comandi Bash da eseguire. Per creare uno script Bash, puoi utilizzare un editor di testo e salvare il file con estensione <code>.sh</code>. Assicurati di rendere il file eseguibile con:</p>
+        <pre><code>chmod +x script.sh</code></pre>
+        <p>Per eseguire lo script, utilizza:</p>
+        <pre><code>./script.sh</code></pre>
+
+        <h2 id="variabili">19. Variabili</h2>
+        <p>In Bash, puoi definire variabili utilizzando la sintassi:</p>
+        <pre><code>variabile="valore"</code></pre>
+        <p>Per utilizzare il valore di una variabile, precedila con il simbolo <code>$</code>:</p>
+        <pre><code>echo $variabile</code></pre>
+
+        <h2 id="operatori-logici">20. Operatori Logici</h2>
+        <p>In Bash, puoi utilizzare operatori logici per controllare il flusso del tuo script. Alcuni operatori logici comuni sono:</p>
+        <ul>
+            <li><code>&&</code>: Esegue il secondo comando solo se il primo ha successo.</li>
+            <li><code>||</code>: Esegue il secondo comando solo se il primo fallisce.</li>
+        </ul>
+
+        <h2 id="operatori-matematici">21. Operatori Matematici</h2>
+        <p>Puoi eseguire operazioni matematiche in Bash utilizzando il comando <code>expr</code> o le doppie parentesi:</p>
+        <pre><code>result=$((a + b))</code></pre>
+
+        <h2 id="cicli">22. Cicli</h2>
+        <p>Bash supporta diversi tipi di cicli, come <code>for</code>, <code>while</code>, e <code>until</code>. Ecco un esempio di ciclo <code>for</code>:</p>
+        <pre><code>for i in {1..5}; do
+    echo "Numero: $i"
+done</code></pre>
+
+        <h2 id="funzioni">23. Funzioni</h2>
+        <p>Le funzioni in Bash possono essere definite utilizzando la seguente sintassi:</p>
+        <pre><code>function_name() {
+    # Comandi
+}</code></pre>
+        <p>Puoi chiamare la funzione semplicemente usando il suo nome:</p>
+        <pre><code>function_name</code></pre>
+
+        <h2 id="permessi">24. Permessi</h2>
+        <p>In Bash, i permessi determinano chi può leggere, scrivere o eseguire un file. I permessi possono essere modificati usando il comando <code>chmod</code>.</p>
+        <h3>Tipi di Permessi</h3>
+        <ul>
+            <li><strong>R</strong>: permesso di lettura</li>
+            <li><strong>W</strong>: permesso di scrittura</li>
+            <li><strong>X</strong>: permesso di esecuzione</li>
+        </ul>
+        <h3>Struttura dei Permessi</h3>
+        <p>I permessi sono rappresentati da tre categorie:</p>
+        <ul>
+            <li><strong>U</strong>: proprietario del file</li>
+            <li><strong>G</strong>: gruppo del file</li>
+            <li><strong>O</strong>: altri utenti</li>
+        </ul>
+        <p>I permessi possono essere impostati con i seguenti valori numerici:</p>
+        <ul>
+            <li><code>4</code>: lettura</li>
+            <li><code>2</code>: scrittura</li>
+            <li><code>1</code>: esecuzione</li>
+        </ul>
+        <p>I permessi possono essere combinati sommando i valori. Ad esempio, per impostare lettura e scrittura, utilizzi <code>6</code> (4+2).</p>
+
+        <h3>Esempi di utilizzo</h3>
+        <p>1. Impostare i permessi di lettura e scrittura per il proprietario:</p>
+        <pre><code>chmod 600 file.txt</code></pre>
+
+        <p>2. Impostare i permessi di lettura, scrittura ed esecuzione per il proprietario e lettura per il gruppo e altri:</p>
+        <pre><code>chmod 755 file.txt</code></pre>
+
+        <p>3. Impostare i permessi di scrittura per tutti:</p>
+        <pre><code>chmod a+w file.txt</code></pre>
+
+        <p>4. Rimuovere i permessi di esecuzione per il gruppo:</p>
+        <pre><code>chmod g-x file.txt</code></pre>
+    </div>
+</body>
+</html>
