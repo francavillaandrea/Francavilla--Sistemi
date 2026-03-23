@@ -1,6 +1,0 @@
-GoldenStateDealers AlessandroSanino 5
-Ferrari 350000
-Lamborghini 250000
-Maserati 105000
-Pagani 3002000
-AlfaRomeo 54000
