@@ -6,7 +6,7 @@ Benvenuti nel repository dedicato alle esercitazioni di **Sistemi e Reti**. Qui 
 
 ## Tecnologie Utilizzate
 
-![C](https://img.shields.io/badge/C-00589d?style=for-the-badge&logo=C&logoColor=white)
+![C](https://img.shields.io/badge/C-00589d?style=for-the-badge&logo=C&logoColor=ffdd54)
 ![Python](https://img.shields.io/badge/Python-34709f?style=for-the-badge&logo=python&logoColor=white)
 
 ---
