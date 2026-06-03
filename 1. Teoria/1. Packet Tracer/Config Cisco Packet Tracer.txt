@@ -1,0 +1,36 @@
+Config Cisco Packet Tracer 
+
+Router 
+- enable
+- show ip int brief 
+- config terminal
+- int <NomePorta> <NumeroPorta> //int GigabitEthernet 0/0
+- ip address <indirizzo ip> <subnet  mask>
+- no shutdown
+- line vty 0 15 
+- password <nome password> //Se criptata password secret <password>
+- transport input telnet
+- login
+- line con 0
+- password 1234
+- login
+- end
+
+Switch
+- enable
+- show ip int brief 
+- config terminal
+- int <NomePorta> <NumeroPorta> //int vlan 1
+- ip address <indirizzo ip> <subnet  mask>
+- no shutdown
+- line vty 0 15 
+- password <nome password> //Se criptata password secret <password>
+- transport input telnet
+- login
+- exit
+- line con 0
+- password 1234
+- login
+- end
+
+Computer
